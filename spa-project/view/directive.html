@@ -1,0 +1,48 @@
+﻿<div class="col-md-12 mt-5" ng-controller="directive">
+
+    <h1 class="text-center">I am Show/Hide Directive</h1>
+    <hr>
+
+    <form>
+        <div class="ft20 checkbox">
+            <label>
+                <input class="va" type="checkbox" ng-model="showMagic" name="magic">
+                &nbsp;Check me to see Magic
+            </label>
+            <div class="btn btn-danger" ng-click="showMagic = !showMagic" ng-disabled="showMagic">Click Me</div>
+        </div>
+        <h2 ng-hide="showMagic" class="text-danger">Hide me if you can!</h2>
+        <h2 ng-show="showMagic" class="text-success">Yes! this is a magic... I am visible and another one is invisible.</h2>
+    </form>
+
+    <hr>
+
+    <div class="pt20">
+
+        <select ng-model="selectedCar" ng-options=" x for (x, y) in car">
+        </select>
+
+        <h1>You selected: <span class="text-danger">{{selectedCar.brand}}</span></h1>
+        <h2>Model: <span class="text-danger">{{selectedCar.type}}</span></h2>
+
+    </div>
+
+</div><!--  container Ends -->
+
+<hr><br>
+
+<div ng-controller="calcCnt">
+    Enter number = <input type="number" ng-model="a" value="0" required/>
+    <br>
+    <br>
+    Enter number = <input type="number" ng-model="b" value="0" required/>
+    <br>
+    <br>
+    <button ng-click="add()">Add</button>
+    <button ng-click="subtract()">Subtract</button>
+    <button ng-click="multiply()">Multiply</button>
+    <button ng-click="devision()">Devision</button>
+    <br>
+    <br>
+    <p>The result is: <b>{{result}}</b></p>
+</div>

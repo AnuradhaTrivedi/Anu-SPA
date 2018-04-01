@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Single Page Application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- JavaScript file Linking-->
+  <script src="Scripts/angular.js"></script>
+  <script src="Scripts/angular-ui-router.min.js"></script>
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts/fontawesome.js"></script>
+  <!-- Carousle file Linking-->
+  <script src="Scripts/carousel.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  
+  <!-- My files -->
+  <script src="router/route.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- All controller files -->
+  <script src="controller/menuCnt.js"></script>
+  <script src="controller/galleryCnt.js"></script>
+  <script src="controller/formCnt.js"></script>
+  <script src="controller/dirCnt.js"></script>
+  
+  <!-- All Service files -->
+  <script src="service/calcCnt.js"></script>
+  
+  <!-- Custom Directive -->
+  <script src="customDirective/dirctive.js"></script>
+
+  <!-- Login controller files -->
+  <script src="login/logindirective.js"></script>
+  <script src="login/loginCnt.js"></script>
+  <link rel="stylesheet" href="css/login.css">
+
+
+</head>
+
+<body ng-app="singhApp">
+  <header class="container-fluid">
+   
+   <login></login>
+   
+    <h1>Single Page Application</h1>
+  </header>
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav" ng-controller="mainCntl">
+        <h4>My Blog</h4>
+        <left-menu></left-menu>
+        <br>
+
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Blog..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <i class="fa fa-search fa-lg"></i>
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <!-- LEFT MENU ENDS -->
+
+      <div class="col-sm-9">
+        <div ui-view></div>
+      </div>
+      <!-- RIGHT Section ENDS up here-->
+
+    </div>
+  </div> <!-- container-fluid ends here -->
+
+   <footer class="text-left">
+ <div class="row disclaimers">
+           <p><center>All Copyright Reserved-Anuradha Trivedi</center></p>
+       </div>
+ 
+    </footer>
+
+</body>
+</html>

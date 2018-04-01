@@ -1,0 +1,58 @@
+﻿<div class="col-md-12 mt-5" ng-controller="formObj">
+    	<div class="row justify-content-center">
+    		<div class="col-8 p10 rounded-left text-success">
+    			<h2 class="pb-3">Registration Form</h2>
+    			<form class="form-horizontal">
+    				<div class="form-group">
+    					<label class="control-label col-sm-2" for="mobile">Mobile:</label>
+    					<div class="col-sm-10">
+    						<input ng-model="cService.mobile" type="tell" class="form-control" id="mobile" placeholder="Enter Mobile">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<label class="control-label col-sm-2" for="email">Email:</label>
+    					<div class="col-sm-10">
+    						<input ng-model="cService.email" type="email" class="form-control" id="email" placeholder="Enter email">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<label class="control-label col-sm-2" for="firstName">First Name:</label>
+    					<div class="col-sm-10">
+    						<input ng-model="cService.firstName" type="text" class="form-control" id="firstName" placeholder="First Name">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<label class="control-label col-sm-2" for="lastName">Last Name:</label>
+    					<div class="col-sm-10">
+    						<input ng-model="cService.lastName" type="text" class="form-control" id="lastName" placeholder="Last Name">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<label class="control-label col-sm-2" for="adrs">Address:</label>
+    					<div class="col-sm-10">
+    						<input ng-model="cService.adrs" type="text" class="form-control" id="adrs" placeholder="Enter Full Address">
+    					</div>
+    				</div>
+    				<div class="col-md-8 mt-3 mb-3">
+    					<button type="submit" class="btn btn-success w-50" ng-click="dataSubmit()">Submit</button>
+    				</div>
+    			</form>
+
+<p style="clear:both"></p>
+
+    			<div class="container clearfix col-md-4">
+    				<p class="text-right">{{cService.TodayDateTime}}</p>
+    				<p ng-bind="cService.mobile"></p>
+    				<p ng-bind="cService.email"></p>
+    				<div>
+    					<span ng-bind="cService.firstName"></span>
+    					&nbsp;
+    					<span ng-bind="cService.lastName"></span>
+    				</div>
+    				<p ng-bind="cService.age"></p>
+    				<p ng-bind="cService.adrs"></p>
+    			</div>
+
+    		</div><!--  col Ends -->
+    	</div><!--  row Ends -->
+</div><!--  container Ends -->

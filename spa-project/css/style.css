@@ -1,0 +1,57 @@
+
+.mb10{margin-bottom:10px}
+.mb20{margin-bottom:20px}
+.mt10{margin-top:10px}
+.mt20{margin-top:20px}
+.pb10{padding-bottom:10px}
+.pb20{padding-bottom:20px}
+.pt10{padding-top:10px}
+.pt20{padding-top:20px}
+.bg-faded{background-color: #f7f7f7}
+.p10{padding: 10px}
+.p20{padding: 20px}
+.m10{margin: 10px}
+.m20{margin: 20px}
+.va{vertical-align: middle;}
+.wd50{width: 50px; height: 50px;}
+.wd30{width: 30px; height: 30px;}
+.ft20{font-size: 20px}
+.ft6em{font-size: 6em}
+.centerDiv{position: fixed;left: 0; right: 0; bottom: 0; top: 0; margin: auto;}
+.z9{z-index: 9}
+.z10{z-index: 10}
+.z11{z-index: 11}
+.blkBG{background-color: #000; opacity: 0.6;}
+.btCls {font-size: 38px;position: absolute;right: 25px;color: #d0d0d0;top: 0;background: transparent;border: none;font-style: normal;}
+.por{position: relative;}
+.tl{text-align: left;}
+
+
+.row.content {height: 1500px}
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+footer,header {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+
+/*Carousel css*/
+/*
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+      height: 280px;
+    }*/

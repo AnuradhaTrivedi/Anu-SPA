@@ -1,0 +1,5 @@
+﻿<ul class="nav nav-pills nav-stacked" id="menu">
+  <li ng-class="{'active': activeM === item}" ng-repeat="item in menuItem">
+    <a ui-sref="{{item.url}}" ng-click="setActive(item)">{{item.name}}</a>
+  </li>
+</ul>
